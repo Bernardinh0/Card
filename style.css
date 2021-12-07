@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+
+}
+
+.card {
+    border-radius: 30px;
+    -webkit-box-shadow: 5px 5px 20px 30px #f9f9f9; 
+    box-shadow: 5px 5px 20px 30px #f9f9f9;
+    max-width: 500px;
+    overflow: hidden;
+    transform: rotate(-5deg);
+    transition: 2s;    /*animation*/
+    overflow: hidden;
+}
+
+.card:hover{
+    transform: rotate(0deg);
+}
+
+.card-body {
+    padding: 10px 20px;
+
+}
+.card-body p {
+    font-size: 2 rem;
+    
+}
+
+.card-footer {
+    background: linear-gradient(270deg, #74d690, #5cbfbb);
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 5px 10px
+}
+
+.img-content {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    overflow: hidden;
+    border:solid 3px white;
+}
+
+.card:hover .img-content{
+    transform: scale(1.2); / (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.img-content img {
+    width: 100%;
+    transform: scale(1.5);
+}
